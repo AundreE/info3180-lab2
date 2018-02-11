@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block main %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/app.css')}}" type="test/css" />
+
+<div id="personalinfo">
+<div class="pic">
+<img src="{{ url_for('static', filename='my cartoon.JPG') }}"/>
+</div>
+<h1>Aundre Edwards</h1>
+<p>@riddimboss<br> Spanish Town, Jamaica <br> Joined {{date}} </p>
+</div>
+<div id="border">
+<div id="bio">
+<p>Determined and harworking individual seeking a career in the computing field that will educe <br> 
+my innovative thinking and creative skills to further the technology develpment in your company.<br> 
+I am a dedicated team player who pays close attention to details and can be relied upon to help
+your company achieve its goals.</p>
+</div>
+<div id="stats">
+<div id="a">
+    <strong>4</strong>
+    <br>Posts
+</div>
+<div id="b">
+    <strong>120</strong>
+    <br>Following
+</div>
+<div id="c">
+    <strong>10k</strong>
+    <br>Followers
+</div>
+</div>
+<div id="button">
+<input type ="button" class="button" value="Follow">
+</div>
+</div>
+{% endblock %}
